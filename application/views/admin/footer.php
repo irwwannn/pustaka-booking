@@ -24,8 +24,8 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
  <div class="modal-header">
  <h5 class="modal-title" id="exampleModalLabel">Yakin 
 mau keluar?</h5>
- <button class="close" type="button" datadismiss="modal" aria-label="Close">
- <span aria-hidden="true">×</span>
+ <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+ <span aria-hidden="true"></span>
  </button>
  </div>
  <div class="modal-body">Pilih "Logout" di bawah jika 
@@ -45,13 +45,13 @@ base_url('autentifikasi/logout'); ?>">Logout</a>
 <script src="<?= base_url('assets/'); 
 ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
-<script src="<?= base_url('assets/'); ?>vendor/jqueryeasing/jquery.easing.min.js"></script>
+<script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for all pages-->
-<script src="<?= base_url('assets/'); ?>js/sb-admin2.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
 <script>
  $('.custom-file-input').on('change', function() {
  let fileName = $(this).val().split('\\').pop();
- $(this).next('.custom-filelabel').addClass("selected").html(fileName);
+ $(this).next('.custom-file-label').addClass("selected").html(fileName);
  });
  $(document).ready(function() {
  $("#table-datatable").dataTable();
